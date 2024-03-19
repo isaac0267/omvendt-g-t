@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/code/style.css" />
+    <title>Gæt Et Tal Spil</title>
+</head>
+<body>
+    <h1>Gæt et tal!</h1>
+    <hr />
+
+    <!-- Opdateret beskrivelse til at matche spillet som implementeret -->
+    <h3>Spil Krav</h3>
+    <p>
+        Velkommen til "Gæt et tal" spillet, hvor du (brugeren) skal gætte et tal mellem 1 og 20,
+        som computeren har genereret. Prøv at gætte tallet med så få gæt som muligt!
+    </p>
+    <hr />
+    <div class="container">
+        <div class="container_wrapper">
+            <!-- Rettet stavefejl i klassenavn for knap -->
+            <button type="button" class="btn btn_again">Spil igen</button>
+
+            <h2>Gæt Nummer Spillet</h2>
+            <p class="hide_num">?</p>
+            <p class="message">start med at gætte...</p>
+            <div class="number_data"></div>
+            <form>
+                <input
+                type="number"
+                placeholder="Indtast dit heldige nummer"
+                class="input_number"
+                />
+                <button type="button" class="btn btn_check">tjek nu</button>
+            </form>
+            <div class="content">
+                <p>Score: <span class="score">20</span></p>
+                <p>Højeste score: <span class="high_score">0</span></p> <!-- Sæt initial værdi til 0 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/code/script.js"></script>
+</body>
+</html>
